@@ -1,0 +1,6 @@
+steps:
+- name: 'gcr.io/cloud-builders/git'
+  args: ['clone', 'https://github.com/juliocanizalez/parcial3gsw.git','master']
+- name: "gcr.io/cloud_builders/gcloud"
+  args: ["app","deploy"]
+  timeout: "1600s"
